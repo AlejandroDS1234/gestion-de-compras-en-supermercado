@@ -48,7 +48,7 @@ if turno_caja.count("Marcela")!=0:
     
 #10 crear diccionario venta
 if turno_caja.count("Preferencial")!=0:
-    venta={"cliente":"Marcela","producto":"Leche","total":3500}
+    vent={"cliente":"Marcela","producto":"Leche","total":3500}
 
     
 #11 comprobar si el diccionario venta existe
@@ -69,4 +69,8 @@ if clientes.count("Fernando")==0:
 
     
 #14 imprimir
-print(f"clientes: {clientes}\nproductos: {productos}\nturno_caja: {turno_caja}\ncanasta_basica: {canasta_basica}\nTUPLA(producto_oferta): {producto_oferta}\nventa: {venta}")
+print(f"clientes: {clientes}\nproductos: {productos}\nturno_caja: {turno_caja}\ncanasta_basica: {canasta_basica}\nTUPLA(producto_oferta): {producto_oferta}")
+try:
+    print(f"venta: {venta}")
+except NameError:
+    print("El diccionario venta no existe")
