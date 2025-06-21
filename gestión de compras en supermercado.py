@@ -17,7 +17,7 @@ if desicion1=="si":
     desicion3=input("Desea comprovar si Huevos esta entre los productos y añadir a pan? (si/no): ").lower()
     if desicion3=="si":
         #2 añadir pan
-        if productos.count("Huevos")!=0:
+        elif productos.count("Huevos")!=0:
             productos.append("Pan")
             print(f"Productos: {productos}")
 
